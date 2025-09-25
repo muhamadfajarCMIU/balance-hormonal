@@ -16,13 +16,7 @@
    margin: 0;
    padding-top: 80px; /* sesuaikan dengan tinggi header */
     }
- #chat{width:360px;margin:24px auto;padding:12px;border-radius:8px;background:white;box-shadow:0 6px 18px rgba(0,0,0,.06);height:420px;overflow:auto}
-    .u{ text-align:right;color:#0b69ff;margin:6px}
-    .b{ text-align:left;color:#0a7a3b;margin:6px}
-    #inputRow{display:flex;gap:8px;justify-content:center;margin-top:12px}
-    input{flex:1;padding:8px;border-radius:6px;border:1px solid #ddd}
-    button{padding:8px 12px;border-radius:6px}
-
+ 
   header { background: #0a5c4f; /* green */ 
     color:#fff; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; 
     position: fixed;   /* ini kunci utamanya */
@@ -126,6 +120,13 @@ nav.show {
   flex: 1; /* biar teksnya isi sisa ruang */
   text-align: justify; /* teks rata kiri kanan */
 }
+.card-body h2 {
+  font-size: 18px;    /* lebih kecil biar cocok sama card */
+  font-weight: normal;
+  text-align: justify; 
+  margin: 0;
+  color: #333;
+}
 
 .page-nav {
   display: flex;
@@ -188,12 +189,17 @@ nav.show {
    <img  src="Untitled design (1).gif" alt="Cmiiw" width=1000; display: flex; justify-content: center; /* horizontal center */
   align-items: center; /* vertical center */ >
 <div class="grid">
-	<div class="card-body">
-	<h2 class="card-text">Burnout tidak hanya memengaruhi kondisi mental, 
-		tetapi juga fisik dan hubungan sosial seseorang.
-		Berikut beberapa dampaknya:</h2>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-text">
+        Burnout tidak hanya memengaruhi kondisi mental, 
+        tetapi juga fisik dan hubungan sosial seseorang. <br><br>
+        Berikut beberapa dampaknya:
+      </h2>
+    </div>
+  </div>
 </div>
-</div>
+
 <div class="grid" /*dampak*/>    
   <div class="card horizontal">
     <img src="lelah.png" alt="Cmiiw">
@@ -266,6 +272,7 @@ nav.show {
 </script>
 </body>
 </html>
+
 
 
 
