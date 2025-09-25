@@ -111,48 +111,51 @@
       gap: 20px;
     }
 
-    .card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      border-radius: 25px;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      padding: 10px;
-      box-shadow: 0 10px 15px rgba(0,0,0,0.08);
-      overflow: hidden;
-      margin-bottom: 15px;
-      transition: transform 0.2s;
-    }
+   <style>
+  .card {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+    background: #fff;
+  }
 
-    .card:hover {
-      transform: translateY(-4px);
-    }
+  .card:hover {
+    transform: translateY(-4px);
+  }
 
-    .card-body {
-      padding: 12px;
-    }
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
 
-    .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+  /* Judul huruf S A N T A I jadi overlay */
+  .card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    margin: 0;
+    z-index: 2;
+  }
 
-    .card-title {
-      margin: 0 0 8px;
-      font-size: 18px;
-    }
+  .card-body {
+    padding: 12px;
+    text-align: center;
+  }
 
-    .card-text {
-      font-size: 14px;
-      color: #555;
-    }
-
+  .card-text {
+    font-size: 14px;
+    color: #333;
+    text-align: justify; /* biar rapi rata kiri-kanan */
+  }
     /* Warna */
     .merah { background: #e74c3c; }
     .oranye { background: #f39c12; }
@@ -238,53 +241,54 @@
       <h2>S A N T A I</h2>
       <div class="grid">
 
-        <div class="card merah">
-          <img src="ker.jpg" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">S</h3>
-            <p class="card-text">Seimbangkan kerja & istirahat</p>
-          </div>
-        </div>
+        <div class="card">
+  <img src="ker.jpg" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">S</h3>
+  <div class="card-body">
+    <p class="card-text">Seimbangkan kerja & istirahat</p>
+  </div>
+</div>
 
-        <div class="card oranye">
-          <img src="task.jpg" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">A</h3>
-            <p class="card-text">Atur prioritas</p>
-          </div>
-        </div>
+<div class="card">
+  <img src="task.jpg" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">A</h3>
+  <div class="card-body">
+    <p class="card-text">Atur prioritas</p>
+  </div>
+</div>
 
-        <div class="card hijau">
-          <img src="n.png" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">N</h3>
-            <p class="card-text">Nikmati hal-hal kecil</p>
-          </div>
-        </div>
+<div class="card">
+  <img src="n.png" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">N</h3>
+  <div class="card-body">
+    <p class="card-text">Nikmati hal-hal kecil</p>
+  </div>
+</div>
 
-        <div class="card biru">
-          <img src="ryoga.png" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">T</h3>
-            <p class="card-text">Tenangkan diri</p>
-          </div>
-        </div>
+<div class="card">
+  <img src="ryoga.png" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">T</h3>
+  <div class="card-body">
+    <p class="card-text">Tenangkan diri</p>
+  </div>
+</div>
 
-        <div class="card ungu">
-          <img src="talk.jpg" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">A</h3>
-            <p class="card-text">Ajak ngobrol teman & keluarga</p>
-          </div>
-        </div>
+<div class="card">
+  <img src="talk.jpg" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">A</h3>
+  <div class="card-body">
+    <p class="card-text">Ajak ngobrol teman & keluarga</p>
+  </div>
+</div>
 
-        <div class="card abu">
-          <img src="jagakesehatan.jpg" alt="Cmiiw" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">I</h3>
-            <p class="card-text">Istiqamah jaga kesehatan</p>
-          </div>
-        </div>
+<div class="card">
+  <img src="jagakesehatan.jpg" alt="Cmiiw" class="card-img">
+  <h3 class="card-title">I</h3>
+  <div class="card-body">
+    <p class="card-text">Istiqamah jaga kesehatan</p>
+  </div>
+</div>
+
 
         <div class="card">
           <div class="card-body">
@@ -326,3 +330,4 @@
   </script>
 </body>
 </html>
+
