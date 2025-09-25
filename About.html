@@ -115,10 +115,12 @@ nav.show {
 
 .card.horizontal img {
   width: 120px;
-  height: 120px;
-  object-fit: contain;
+  height: auto;      /* biar tinggi ngikut proporsi gambar */
+  max-height: 120px; /* biar nggak terlalu tinggi */
+  object-fit: scale-down; /* gambar disesuaikan tanpa kepotong */
   border-radius: 12px;
 }
+
 
 .card.horizontal .card-body {
   flex: 1; /* biar teksnya isi sisa ruang */
@@ -267,6 +269,7 @@ nav.show {
 </script>
 </body>
 </html>
+
 
 
 
