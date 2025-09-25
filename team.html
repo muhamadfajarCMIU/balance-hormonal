@@ -16,7 +16,7 @@
    margin: 0;
    padding-top: 80px; /* sesuaikan dengan tinggi header */
     }
-  header { background: #00bfff; /* azure */ 
+  header { background: #0a5c4f; /* green */ 
     color:#fff; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; 
     position: fixed;   /* ini kunci utamanya */
     top: 0; /* tempel di atas */
@@ -40,7 +40,7 @@
 nav {
   display: none;
   flex-direction: column;
-  background: #00bfff;
+  background: #0a5c4f;
   position: absolute;
   top: 60px; right: 20px;
   border-radius: 8px;
@@ -68,7 +68,6 @@ nav.show {
   }
   nav a { margin: 0 10px; }
 }
-
 
     section { padding:40px 20px; max-width:1100px; margin:auto; }    
     .hero { background:linear-gradient; color:#000; padding:60px 50px; text-align:center; border-radius:8px; }
@@ -101,15 +100,45 @@ nav.show {
   color: #555;
 }
 
-    footer { background:#00bfff; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+.next-page {
+  text-align: right;   /* biar tombol di kanan */
+  margin: 30px 20px;
+}
+
+.next-page a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #0a5c4f;  /* warna tombol */
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.next-page a:hover {
+  background: #00bfff; /* efek hover */
+}
+
+ .section {
+      margin-bottom: 30px; /* jarak antar paragraf/blok */
+    }
+    footer { background:#0a5c4f; color:#fff; text-align:center; padding:20px; margin-top:40px; }
     footer a { color:#fff; margin:0 8px; }
     img { max-width:100%; border-radius:8px; }
 
+.box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 50px; /* jarak antar div */
+    border-radius: 15px; /* sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan biar elegan */
+  }
+ .box:hover { transform:translateY(-4px); transition:0.2s; }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo"><strong>Out From Burn Out!</strong></div>
+    <div class="logo"><strong>Welcome!</strong></div>
   <div class="menu-toggle"><i class="fas fa-bars"></i></div>
   <nav>
     <a href="aqilfajar.html">Home</a>
@@ -118,107 +147,9 @@ nav.show {
     <a href="team.html">Team</a>
   </nav>
   </header>
-
-  <!-- HOME (FAJAR) -->
- <section id="home" class="hero">
-  <div class="slider">
-    <div class="slide">
-      <h1>OUT FROM BURN OUT!</h1>
-      <p>Inovasi, penelitian, dan pemanfaatan alga untuk masa depan yang berkelanjutan.</p>
-    </div>
-  <div class="slide">
-      <img  src="random.jpg" alt="Cmiiw" width=450; >
-    </div>    
-  <div class="slide">
-      <img  src="tumbal.png" alt="Cmiiw" width=300; height >
-    </div>
-  </div>
-  <h2>About Burn Out</h2>
-      <p>Burnout itu seperti kehabisan energi total—bukan hanya fisik, tapi juga emosional dan mental. 
-   Semua tekanan dari pekerjaan atau kehidupan sehari-hari bisa membuat kamu merasa kelelahan yang tak ada habisnya,
-   kehilangan motivasi, dan sulit untuk berfungsi seperti biasanya.
-   Jangan biarkan burnout mengambil alih. Waktunya untuk recharge dan kembali dengan kekuatan penuh!
-  </p>
- </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-
-   <img  src="Untitled (1).jpg" alt="Cmiiw" width=1000; display: flex; justify-content: center; /* horizontal center */
-  align-items: center; /* vertical center */ >
-
-<div class="grid" /*dampak*/> 
-      <a href="https://placehold.co/1000x400" data-lightbox="algae" data-title="Algae 1">
-        <img src="https://placehold.co/300x200" alt="Algae 1">
-      </a>
-	</div>
-   <div class="grid">
-      <a href="https://placehold.co/1000x400" data-lightbox="algae" data-title="Algae 2">
-        <img src="https://placehold.co/300x200" alt="Algae 2">
-      </a>
-	</div>
-   <div class="grid">
-      <a href="https://placehold.co/1000x400" data-lightbox="algae" data-title="Algae 3">
-        <img src="https://placehold.co/300x200" alt="Algae 3">
-      </a>
-    </div /*pentingnya mengenal B.O*/>
-
-  </section>
- <section id="gallery">
-  <h2>S A N T A I</h2>
-  <div class="grid">
-
-    <div class="card">
-      <img src="tumbal.png" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">S</h3>
-        <p class="card-text">Seimbangkan kerja & istirahat</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="task.jpg" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">A</h3>
-        <p class="card-text">Atur prioritas</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="tumbal.png" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">N</h3>
-        <p class="card-text">Nikmati hal-hal kecil</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="yoga.jpg" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">T</h3>
-        <p class="card-text">Tenangkan diri</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="tumbal.png" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">A</h3>
-        <p class="card-text">Ajak ngobrol teman & keluarga</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="tumbal.png" alt="Cmiiw" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">I</h3>
-        <p class="card-text">Istiqamah jaga kesehatan</p>
-      </div>
-    </div>
-
-  </div> <!-- tutup grid -->
-</section>
-
+<div class="box">
+<h2>Terima Kasiih Telah Mengunjungi Website Kamii...</h2>
+</div>
   <section id="team">
     <h2>Our Team</h2>
     <div class="grid">
@@ -226,7 +157,13 @@ nav.show {
       <div class="card"><strong>Aqil Akyas</strong><br>Visioner</div>
       <div class="card"><strong>Wildan Maulana</strong><br>Desainer</div>
     </div>
+
   </section>
+
+ <!-- tombol next page -->
+  <div class="next-page">
+    <a href="About.html" class="next">Next ➜</a>
+  </div>
 
   <footer>
     <p>Ikuti kami:</p>
@@ -243,7 +180,7 @@ nav.show {
     index = (index + 1) % slides.length;
     slider.style.transform = `translateX(-${index * 100}%)`;
   }, 3000); // ganti slide tiap 4 detik
-
+ </script>
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('header nav');
@@ -251,7 +188,12 @@ nav.show {
     nav.classList.toggle('show');
   });
 </script>
-
- </script>
 </body>
 </html>
+
+
+
+
+
+
+
